@@ -14,30 +14,37 @@
 ## 生成好后执行 live-server(项目名称) 启动
 
 ## v-if  v-else（判断条件）
+## v-show (显示或者隐藏，v-show是改变元素的disabled)
 ```
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>v-if实例</title>
+    <title>v-if，v-show实例</title>
     <script type="text/javascript" src="../assets/js/vue.js"></script>
 
 </head>
 <body>
 <div id="app">
-    <div v-if="isLogin">登录了</div>
+    <div v-if="isLogin">已经登录</div>
     <div v-else>未登录</div>
+    <div v-show="vShow">需要隐藏或者显示的元素</div>
 </div>
 <script type="text/javascript">
     var app = new Vue({
         el:"#app",
         data:{
             isLogin:true,
+            vShow:true
         }
     });
 </script>
 </body>
 </html>
 ```
+* el: 实例提供挂载元素(通俗的说就是操作区域元素)
+* data: Vue实例的数据对象 
+
+
 
 
 
