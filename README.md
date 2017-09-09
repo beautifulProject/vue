@@ -14,7 +14,7 @@
 ##生成好后执行 live-server(项目名称) 启动
 
 ## v-if  v-else（判断条件）
-``
+```
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -37,4 +37,4 @@
 </script>
 </body>
 </html>
-``
+```
